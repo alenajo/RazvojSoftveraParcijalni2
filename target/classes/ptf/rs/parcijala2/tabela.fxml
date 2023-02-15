@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ptf.rs.parcijala2.controllers.TabelaController">
+   <center>
+      <TableView fx:id="tabela" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Naziv">
+          <cellValueFactory>
+              <PropertyValueFactory property="naziv" />
+          </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="cijenaColumn" prefWidth="75.0" text="Cijena">
+          <cellValueFactory>
+              <PropertyValueFactory property="cijena"/>
+          </cellValueFactory>
+          </TableColumn>
+            <TableColumn prefWidth="75.0" text="Kolicina">
+            <cellValueFactory>
+                <PropertyValueFactory property="kolicina" />
+            </cellValueFactory>
+            </TableColumn>
+            <TableColumn prefWidth="75.0" text="Kategorija proizvoda">
+            <cellValueFactory>
+                <PropertyValueFactory property="kategorija" />
+            </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="popustColumn" prefWidth="75.0" text="Popust na kasi">
+            <cellValueFactory>
+                <PropertyValueFactory property="popust" />
+            </cellValueFactory>
+            </TableColumn>
+        </columns>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+   <bottom>
+      <Button onAction="#prikazPodataka" mnemonicParsing="false" text="Prikaz podataka" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Button>
+   </bottom>
+</BorderPane>

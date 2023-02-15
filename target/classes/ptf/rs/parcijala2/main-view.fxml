@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ptf.rs.parcijala2.controllers.MainController">
+    <Tab fx:id="formaTab" text="Forma">
+        <fx:include fx:id="forma" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" source="forma.fxml" />
+    </Tab>
+    <Tab fx:id="tabelaTab" text="Tabela">
+        <fx:include fx:id="tabela" source="tabela.fxml" />
+    </Tab>
+</TabPane>
